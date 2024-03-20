@@ -1,0 +1,31 @@
+## @file
+#
+#  A basic application displays the infomation of the device.
+#
+#  Copyright (c) 2008 - 2024, Intel Corporation. All rights reserved.<BR>
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = ListPciDev
+  FILE_GUID                      = 114BC192-C3BA-4D71-BDDB-3E8539328F85
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  ListPciDev.c
+
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+
+[Protocols]
+  gEfiPciRootBridgeIoProtocolGuid
+  gEfiPciIoProtocolGuid
