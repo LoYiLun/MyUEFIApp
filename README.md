@@ -1,5 +1,5 @@
 ## Overview
-    This is a basic application displays the infomation of the pci device. (lspci Command Simulation Practice)
+- This is a basic application displays the infomation of the pci device. (lspci Command Simulation Practice)
 ## Prerequisites
 
 - Clone the TianoCore EDK2 repository.
@@ -28,6 +28,7 @@
      qemu-system-x86_64.exe -bios "OVMF.fd" -hda fat:rw:C:\"yourDir" -net none
      ```
 ## Result
-    Input ListPciDev will show the result.
+- Input ```ListPciDev``` will show the result.
+
 ![image](https://github.com/LoYiLun/MyUEFIApp/blob/main/result.png?raw=true)
 
